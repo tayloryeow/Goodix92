@@ -1,0 +1,23 @@
+What is the Intel SGX KVM kernel
+-Intel Software Guard Extension
+	-increases security of application code and data
+    -Requires kernel with SGX support. The linux must be built using 
+        the SGX Linux Development Tree.     
+
+Whats KVM?	
+-Kernel-based Virtual Machine: turns linux into a hypervisor that allows a 
+    machine to run multiple isolated virtual environments called guests (VMs)
+ 
+What's Qemu:
+    Generic and open source machine emulator a virtualizer
+
+I'm missing a /boot/config/ directory. Maybe its a thing in the original distro they were developing for
+-You gotta create a config using make config
+
+
+
+How does one write a driver on Linux
+1. must be written in C
+2. The driver will exist in Kernel space
+3. necessary to compile the module using the same kernel that you’re going to load and use the module with
+4. 
